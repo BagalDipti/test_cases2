@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<testsuite errors="0" failures="1" tests="4" name="from cppunit">
+  <testcase classname="TestBasicMath" name="testSubtraction">
+    <error message="assertion failed - Expression: 5 == mTestObj-&gt;Subtraction(6,2)" type="Assertion">assertion failed
+- Expression: 5 == mTestObj-&gt;Subtraction(6,2)
+
+                File:TestBasicMath.cpp
+                Line:59</error>
+  </testcase>
+  <testcase classname="TestBasicMath" name="testAddition"/>
+  <testcase classname="TestBasicMath" name="testDivision"/>
+  <testcase classname="TestBasicMath" name="testMultiply"/>
+</testsuite>
