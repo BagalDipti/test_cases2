@@ -34,6 +34,8 @@ public:
 
 protected:
     void testAddition(void);
+    void testSubtraction(void);
+    void testDivision(void);
     void testMultiply(void);
 
 private:
@@ -46,13 +48,25 @@ private:
 void
 TestBasicMath::testAddition(void)
 {
-    CPPUNIT_ASSERT(5 == mTestObj->Addition(2,3));
+    CPPUNIT_ASSERT(5 == mTestObj->Addition(4,1));
 }
+
+void
+TestBasicMath::testSubtraction(void)
+{
+    CPPUNIT_ASSERT(5 == mTestObj->Subtraction(7,2));
+}
+void
+TestBasicMath::testDivision(void)
+{
+    CPPUNIT_ASSERT(5 == mTestObj->Division(10,2));
+}
+
 
 void
 TestBasicMath::testMultiply(void)
 {
-    CPPUNIT_ASSERT(6 == mTestObj->Multiply(2,3));
+    CPPUNIT_ASSERT(6 == mTestObj->Multiply(6,1));
 }
 
 void TestBasicMath::setUp(void)
