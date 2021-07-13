@@ -25,6 +25,8 @@ class TestBasicMath : public CppUnit::TestFixture
 {
     CPPUNIT_TEST_SUITE(TestBasicMath);
     CPPUNIT_TEST(testAddition);
+    CPPUNIT_TEST(testSubtraction);
+    CPPUNIT_TEST(testDivision);
     CPPUNIT_TEST(testMultiply);
     CPPUNIT_TEST_SUITE_END();
 
@@ -54,7 +56,7 @@ TestBasicMath::testAddition(void)
 void
 TestBasicMath::testSubtraction(void)
 {
-    CPPUNIT_ASSERT(5 == mTestObj->Subtraction(7,2));
+    CPPUNIT_ASSERT(5 == mTestObj->Subtraction(6,2));
 }
 void
 TestBasicMath::testDivision(void)
